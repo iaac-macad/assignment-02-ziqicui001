@@ -2,10 +2,11 @@
 import * as THREE from 'three'
 
 // uncomment to load controls
-//import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 
 // create a scene and a camera
 const scene = new THREE.Scene()
+scene.background = new THREE.Color('skyblue')
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 )
 camera.position.z = 30
 
@@ -15,7 +16,7 @@ renderer.setSize( window.innerWidth, window.innerHeight )
 document.body.appendChild( renderer.domElement )
 
 // Uncomment next line to add controls
-// const controls = new OrbitControls( camera, renderer.domElement );
+const controls = new OrbitControls( camera, renderer.domElement );
 
 // Create an object and add it to the scene:
 

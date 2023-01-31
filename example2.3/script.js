@@ -42,7 +42,7 @@ function init () {
 
     let material, cubeMap
 
-    // load a pbr material
+    // load a pbr material,需要修改文件夹位置跟图片名称
     const tl = new THREE.TextureLoader()
     tl.setPath('materials/PBR/streaked-metal1/')
     material = new THREE.MeshPhysicalMaterial()

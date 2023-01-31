@@ -39,7 +39,7 @@ function init() {
     directionalLight2.intensity = 2
     scene.add( directionalLight2 )
 
-    selectedMaterial = new THREE.MeshStandardMaterial( {color: 'yellow'} )
+    selectedMaterial = new THREE.MeshStandardMaterial( {color: 'red'} )
 
     raycaster = new THREE.Raycaster()
 

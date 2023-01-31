@@ -33,7 +33,7 @@ function init() {
     directionalLight.intensity = 2
     scene.add( directionalLight )
 
-    raycaster = new THREE.Raycaster()
+    raycaster = new THREE.Raycaster()//鼠标点击
 
     const loader = new Rhino3dmLoader()
     loader.setLibraryPath( 'https://cdn.jsdelivr.net/npm/rhino3dm@7.11.1/' )
@@ -79,7 +79,7 @@ function onClick( event ) {
         const object = intersects[0].object
         console.log(object) // debug
 
-        object.material.color.set( 'yellow' )
+        object.material.color.set( 'red' )
 
         // get user strings
         let data, count
